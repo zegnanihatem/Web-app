@@ -3,12 +3,8 @@ import pandas as pd
 import numpy as np
 #
 import streamlit as st
-try:
-    from streamlit_login_auth_ui.widgets import __login__
-except:
-    import os
-    os.system('cmd /k "pip install streamlit-authenticator"')
-    from streamlit_login_auth_ui.widgets import __login__
+from streamlit_login_auth_ui.widgets import __login__
+
 
 
 st.set_page_config(
